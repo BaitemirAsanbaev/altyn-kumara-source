@@ -1,0 +1,13 @@
+@import './variables/_colors.scss';
+@import './variables/_fonts.scss';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $main;
+  font-family: $montserrat;
+  transition: .5s;
+}
+body{
+  background-color: #fff
+}
