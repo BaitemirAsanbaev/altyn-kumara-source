@@ -1,17 +1,22 @@
-@import '../../../style/variables/_colors';
+@import "../../../style/variables/_colors";
 
-.SimpleButton{
-  background-color: $main;
-  padding: 10px 30px;
-  cursor: pointer;
-  transition: .5s;
-  a{
+.SimpleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    background-color: $main;
+    padding: 20px 30px;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
     color: #fff;
     text-decoration: none;
     font-size: 26px;
   }
 }
-.SimpleButton:hover{
+.SimpleButton a:hover {
   box-shadow: 6px 6px 0px $accent;
   transform: translate(-3px, -3px);
 }

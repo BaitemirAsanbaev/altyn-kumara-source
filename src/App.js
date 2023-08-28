@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import NotFound from './pages/NotFound';
 import styles from './style/global.module.scss'
+import Book from './pages/Book';
 const App = () => {
+
+  
   return (<div className={styles.app}>
     <Layout>
     <Routes>
@@ -13,6 +16,7 @@ const App = () => {
         <Route path='*' element={<NotFound/>}/>
         <Route path='menu' element={<Menu/>}/>
         <Route path='delivery' element={<Delivery/>}/>
+        <Route path='book' element={<Book/>}/>
     </Routes>
     </Layout>
   </div>);

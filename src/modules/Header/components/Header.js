@@ -35,7 +35,7 @@ useEffect(()=>{
     <Nav open={()=>setOpen(true)}/>
     <Drawer isOpen={open} close={()=>setOpen(false)}/>
     <Backdrop close={()=>setOpen(false)} isOpen={open}/>
-    {pages.includes(url) ? <Banner img={img}/> : null}
+    {pages.includes(url) ? <Banner img={img}/> : <div style={{marginBottom:"100px"}}></div>}
   </header> );
 }
  

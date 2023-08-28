@@ -12,6 +12,7 @@ const NavLinks = ({ pages, drawer=false, open, close }) => {
         <li className={`${classes.pagesLink} ${drawer ? classes.drawerLink : null}`}><NavLink onClick={close} to='/'>Главная</NavLink></li>
         <li className={`${classes.pagesLink} ${drawer ? classes.drawerLink : null}`}><NavLink onClick={close} to='/menu'>Меню</NavLink></li>
         <li className={`${classes.pagesLink} ${drawer ? classes.drawerLink : null}`}><NavLink onClick={close} to='/delivery'>Доставка</NavLink></li>
+        <li className={`${classes.pagesLink} ${drawer ? classes.drawerLink : null}`}><NavLink onClick={close} to='/book'>Бронирование</NavLink></li>
       </> :
       <>
         <li><NavLink to='/cart'><img src={cartIcon} alt='cart' /></NavLink></li>
